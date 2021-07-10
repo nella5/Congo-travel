@@ -89,3 +89,39 @@ opacity: 1;
 	margin: 5px;
 	height: 30px;
 }
+
+/*-------style du menu------------------*/
+
+#menu{
+	background:#333;
+	position:sticky;
+	top: 0; overflow: hidden;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color:#333 ;
+}
+
+li{
+	float: left;
+
+}
+
+li a{
+	color:wheat;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+li a:hover:not(.active){
+background: #F00A3C;
+}
+.active{
+	background: #F00A3C;
+}
