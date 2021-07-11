@@ -6,7 +6,7 @@ body,html,*{
 }
 
 #slider{
-	background-color: aqua;
+	/*background-color: aqua;*/
 	width: 100%;
 	height: 550px;
 	position: relative;
@@ -25,6 +25,7 @@ body,html,*{
 	left: 0px;
 	top:0px;
 	position:absolute;
+	transition: 1s;
 	
 }
 
@@ -34,6 +35,7 @@ body,html,*{
 	right: 0px;
 	top:0px;
 	position:absolute;
+	transition:1s;
 }
 
 .left{
@@ -43,10 +45,11 @@ body,html,*{
 	width: 60px;
 	height: 70px;
 	
-}
-.left:hover{
-	opacity: 1;
+}.left :hover{
+	opacity: 2;
+	transition: 1s;
 	}
+
 
 .right{
 	position:absolute;
@@ -55,12 +58,13 @@ body,html,*{
 	width: 60px;
 	height: 70px;
 
-}
-
-.right:hover{
-	opacity: 1;
+}.right :hover{
+	opacity: 2;
+	transition: 1s;
 	
 	}
+
+
 
 /*--------Style titre---------*/
 .entête_titre {
@@ -203,3 +207,70 @@ transform: translate(-50%, -50%);
 	opacity: 1;
 }
 
+.inscription-boîte{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding:6% 0;
+	text-align: center;
+	clear:left;
+
+}
+
+.inscription-boîte h2{
+margin:0 0 1% 0;
+font-weight: 100;
+font-size: 30px;
+	
+}
+
+.inscription-boîte .inscription{
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+}
+
+.inscription-boîte .inscription input{
+	width: 100%; background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #F00A3C;
+	padding: 1% 0 1% 0;
+	text-align: center;
+	font-size: 18px;
+	font-family: inherit;
+	font-weight: 300;
+	line-height: 1.5;
+	color: black;
+	outline: none;
+}
+
+.inscription-boîte .inscription button{
+	margin-top: 3%;
+	background: transparent;
+	border: 2px solid #F00A3C;
+	border-radius: 50px;
+	padding: 10px 40px;
+	cursor:pointer;
+	display: inline-block;
+	font-weight: 700;
+	position: relative;
+	transition: 2s;
+}
+
+.inscription-boîte .inscription button :hover{
+color:#F00A3C;
+padding: 10px 40px;
+transition: 2s;
+
+}
+
+.footer{
+	clear:left;
+	text-align: center;
+	padding: 40px;
+	bottom: 0;
+	margin-top: auto;
+	background-color: #000;
+}
+
+.footer h2{
+	color: #FFFFFF;
+}
